@@ -23,7 +23,7 @@ spec:
         args: ["lab", "--allow-root", "--port", "8888", "--ip", "0.0.0.0"]
 ---
 kind: Service
-apiVersion: v1
+apiVersion: apps/v1
 metadata:
   name: jupyter-notebook
 spec:
