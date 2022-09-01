@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: minimal-notebook
-        image: base:5000/blog_pipeline_notebooks
+        image: jupyter/base-notebook
         ports:
         - containerPort: 8888
         command: ["/usr/local/bin/jupyter"]
