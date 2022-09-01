@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jupyter-notebook
-  namespace: default
   labels:
     app: jupyter-notebook
 spec:
@@ -27,7 +26,6 @@ kind: Service
 apiVersion: apps/v1
 metadata:
   name: jupyter-notebook
-  namespace: default
 spec:
   type: NodePort
   selector:
