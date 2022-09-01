@@ -19,5 +19,3 @@ spec:
         image: jupyter/base-notebook
         ports:
         - containerPort: 8888
-        command: ["/usr/local/bin/jupyter"]
-        args: ["lab", "--allow-root", "--port", "8888", "--ip", "0.0.0.0"]
